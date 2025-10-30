@@ -101,22 +101,6 @@ lib/
    flutter run
    ```
 
-## 📱 Screens
-
-### 1. Movies List Screen
-- Display paginated list of popular movies
-- Theme toggle button
-- Load more button
-- Movie poster, title, rating, and genre
-- Error handling
-
-### 2. Movie Details Screen
-- Full movie details
-- Large poster image
-- Rating and genre
-- Description text
-- Error handling
-
 ## 💾 Caching Strategy
 
 - Movies list cached for 24 hours
@@ -138,39 +122,3 @@ Firebase Crashlytics integrated for:
 - Network errors
 - Runtime errors
 - User actions (logs)
-
-## 🧪 Testing
-
-Run tests:
-```bash
-flutter test
-```
-
-## 📝 Notes
-
-- The app uses a repository pattern for data management
-- Dio is used for HTTP requests with interceptors
-- Hive is used for local caching
-- Firebase Crashlytics for error logging
-- Bloc pattern for state management
-
-## 🔧 Troubleshooting
-
-1. **Build Runner Issues:**
-   - Run `flutter clean`
-   - Delete `.dart_tool` folder
-   - Run `flutter pub get` again
-   - Run `dart run build_runner build --delete-conflicting-outputs`
-
-2. **Firebase Issues:**
-   - Ensure Firebase is properly configured
-   - Check your `google-services.json` and `GoogleService-Info.plist`
-
-3. **Network Issues:**
-   - Check your TMDB API key
-   - Verify internet connection
-   - App will fallback to cached data if offline
-
-## 📄 License
-
-This project is part of Omar Mentorship Week 5 assignment.
